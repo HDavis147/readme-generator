@@ -20,16 +20,35 @@ function init() {
     inquirer
   .prompt([
     {
+        type: 'input',
+        message: `${questions[0]}`,
+        name: 'projectName',
+    },
+    {
       type: 'input',
-      message: `${questions[0]}`,
-      name: 'projectName',
+      message: `${questions[1]}`,
+      name: 'installInstructions',
+    },
+    {
+        type: 'input',
+        message: `${questions[2]}`,
+        name: 'projectUse',
+    },
+    {
+        type: 'input',
+        message: `${questions[3]}`,
+        name: 'projectContribution',
+    },
+    {
+        type: 'input',
+        message: `${questions[4]}`,
+        name: 'projectTest',
     }
   ])
   .then((response) => {
-    // do something with response
-    // const runHTML = generateHTML(response)
+    const inquirerAnswers = response;
+    console.log(inquirerAnswers);
   });
-
 }
 
 // Function call to initialize app
