@@ -45,9 +45,11 @@ function init() {
         name: 'projectTest',
     }
   ])
-  .then((response) => {
-    const inquirerAnswers = response;
-    console.log(inquirerAnswers);
+  .then((data) => {
+    const inquirerAnswers = data;
+    const fileName = inquirerAnswers.projectName + ".md";
+    console.log(data);
+    console.log(fileName);
   });
 }
 
