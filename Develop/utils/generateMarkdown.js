@@ -12,9 +12,36 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `# ${data.projectName}
+  This repository holds the code for my ${data.projectName} application.
 
-`;
+  ## Installation
+  ${data.installInstructions}
+
+  ## Description
+  ${data.projectDescription}
+
+  ## Usage
+  ${data.projectUse}
+
+  ## Contribution
+  ${data.projectContribution}
+
+  ## Testing
+  ${data.projectTest}
+
+  ## Credits
+
+  
+
+  ## License
+
+  [MIT License](./LICENSE)
+
+  ## Questions
+
+  For questions, please reach out to me on GitHub via my [profile](https://github.com/${data.gitUser}), or by [email](${data.userEmail})
+  `;
 }
 
 module.exports = generateMarkdown;
