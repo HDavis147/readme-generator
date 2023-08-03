@@ -6,7 +6,7 @@ This application will prompt the user for information about their project via th
 
 ## Usage
 
-Requires inquirer@8.2.4 and fs. Navigate to the working directory via the terminal and start the index file using the command "node index.js". Follow the prompts as they appear. Once finished your markdown document will appear in the working directory. 
+Requires inquirer@8.2.4 and fs. Navigate to the working directory via the terminal and start the index file using the command "node index.js". Follow the prompts as they appear. Once finished, your markdown document will appear in the working directory. 
 
 ## Credits
 
